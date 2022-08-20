@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="472pt"
+    height="150pt"
+    viewBox="0 0 472 150">
+<defs/>
+<path id="shape0" fill="#961113" fill-rule="evenodd" stroke="#961113" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0L472 0L472 150L0.171875 150Z" sodipodi:nodetypes="ccccc"/><path id="shape01" transform="translate(47.646449430245, 0)" fill="#fec917" fill-rule="evenodd" stroke="#fdca15" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0L177.5 150L198.125 150L397.3 0Z" sodipodi:nodetypes="ccccc"/><path id="shape02" fill="#06fe4b" fill-rule="evenodd" stroke="#06fe4b" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" d="M228.484 150L70.1362 0L0 0L223.563 150Z" sodipodi:nodetypes="ccccc"/><path id="shape1" transform="translate(243.562517453947, 0)" fill="#0bfd4e" fill-rule="evenodd" stroke="#04ff44" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" d="M0 150L5.78125 150L228.937 0L155.062 0Z" sodipodi:nodetypes="ccccc"/><path id="shape03" transform="translate(148.006286423845, 0)" fill="#ff802b" fill-rule="evenodd" stroke="#fc8024" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0L53.8687 0L86.1786 150L83.8364 150Z" sodipodi:nodetypes="ccccc"/><path id="shape11" transform="translate(237.830948988518, 0)" fill="#ff802b" fill-rule="evenodd" stroke="#fc8024" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" d="M32.1954 0L84.1678 0L2.09922 150L0 150Z" sodipodi:nodetypes="ccccc"/><text id="shape04" krita:useRichText="true" krita:textVersion="2" transform="matrix(4.67738153800999 0 0 4.25922651406742 172.356550666599 55.9954243790439)" fill="#000000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" font-family="Impact" font-size="12" font-size-adjust="0.530825" font-stretch="normal" letter-spacing="0" word-spacing="0"><tspan x="0">LOJAS</tspan></text><text id="shape05" krita:useRichText="true" krita:textVersion="2" transform="matrix(4.42391336062422 0 0 2.49535397226696 36.2119820295966 119.625007667732)" fill="#ffffff" stroke="#121212" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="1" font-family="Impact" font-size="24" font-size-adjust="0.530825" font-stretch="normal" letter-spacing="0" word-spacing="0"><tspan x="0">VALENTIM</tspan></text>
+</svg>

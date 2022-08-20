@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejados - Móveis Valentim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon_redondo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="header__div-logo">
+            <img src="imagens/logo_svg_1.svg" alt="Móveis Valentim">
+            <small>desde 1999</small>
+        </div>
+        <div id="header__div-botao">
+            <a href="#div-frete-montagem">
+                <p><span class="sublinhado">MONTAGEM E FRETE GRÁTIS</span> PARA ARACAJU E REGIÃO</p>
+            </a>
+            
+            <button class="botao-solicitar-orcamento">
+                <p>SOLICITAR<br>ORÇAMENTO</p>
+            </button>
+        </div>
+    </header>
+    
+    <div id="banner">
+        <div id="banner__cima">
+            <p>Móveis Planejados do jeito que <br>você sonha para qualquer ambiente</p>
+        </div>
+        <div id="banner__baixo">
+            <div id="banner-baixo__div-background">
+                <button class="botao-solicitar-orcamento">
+                    <p>SOLICITAR<br>ORÇAMENTO</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="main__imagem-planejado" id="main__imagem-00" onclick="click_imagem(0)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-01" onclick="click_imagem(1)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-02" onclick="click_imagem(2)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-03" onclick="click_imagem(3)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-04" onclick="click_imagem(4)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-05" onclick="click_imagem(5)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-06" onclick="click_imagem(6)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-07" onclick="click_imagem(7)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-08" onclick="click_imagem(8)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-09" onclick="click_imagem(9)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-10" onclick="click_imagem(10)"><div></div></div>
+        <div class="main__imagem-planejado" id="main__imagem-11" onclick="click_imagem(11)"><div></div></div>
+    </main>
+
+    <div id="container-imagens-g" class="">
+        <img src="imagens/imagem_banner_1500.jpg" alt="Imagem do planejado em tamanho grande" id="container-ig__img">
+        <div id="container-ig__botoes">
+            <button id="container-ig-botoes__botao-esquerda" class="botao-lateral" onclick="click_mudar_imagem(-1)">
+                ❮
+            </button>
+            <button id="container-ig-botoes__botao-direita" class="botao-lateral" onclick="click_mudar_imagem(1)">
+                ❯
+            </button>
+            <button id="container-ig-botoes__botao-fechar" onclick="click_fechar_imagem()">
+                ✖
+            </button>
+        </div>
+    </div>
+
+    <div id="div-frete-montagem">
+        <div id="div-fm__moldura">
+            <h3>MONTAGEM E FRETE GRÁTIS PARA ARACAJU E CIDADES EM ATÉ 50 KM AO SEU REDOR</h3>
+            <a href="">ver cidades listadas</a>
+            <button class="botao-solicitar-orcamento">
+                <p>SOLICITAR<br>ORÇAMENTO</p>
+            </button>
+        </div>
+    </div>
+    
+    <div class="container-divs-expandiveis" id="div-vantagens">
+        <div>
+            <h3>Muitas vantagens e facilidades para você!</h3>
+            <section class="expandivel" onclick="click_div_expandivel('descricao-vantagem-00')"> <!-- trocar essa div com classe para um "section" com classe "section-expandivel"? -->
+                <p class="section-expandivel__titulo"><span class="sublinhado">Aproveitamento total do espaço</span></p>
+                <p class="section-expandivel__descricao" id="descricao-vantagem-00">Usamos as medidas da sua casa para montar perfeitamente seu ambiente desejado, evitando qualquer dor de cabeça envolvendo tamanhos.</p>
+            </section>
+            
+            <section class="expandivel" onclick="click_div_expandivel('descricao-vantagem-01')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Planejados para qualquer ambiente</span></p>
+                <p class="section-expandivel__descricao" id="descricao-vantagem-01">Cozinhas, salas, quartos, escritórios, banheiros, quarto infantis e até lojas. Independente de qual ambiente você deseja mobiliar, nós te oferecemos as opções de alta qualidade do jeito que você deseja.</p>
+            </section>
+
+            <section class="expandivel" onclick="click_div_expandivel('descricao-vantagem-02')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Feito do jeito que você sonha</span></p>
+                <p class="section-expandivel__descricao" id="descricao-vantagem-02">Acompanhe o projeto e escolha cada detalhe do seu ambiente garantindo que você esteja feliz ao receber seu ambiente na sua casa.</p>
+            </section>
+
+            <section class="expandivel" onclick="click_div_expandivel('descricao-vantagem-03')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Mais de 21 anos no mercado</span></p>
+                <p class="section-expandivel__descricao" id="descricao-vantagem-03">As Lojas Valentim atuam no mercado de venda de móveis desde 1999, e acumulam clientes satisfeitos que não hesitam em retornar às nossa Lojas quando precisam renovar sua casa com qualidade.</p>
+            </section>
+
+            <section class="expandivel" onclick="click_div_expandivel('descricao-vantagem-04')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Móveis de alta qualidade</span></p>
+                <p class="section-expandivel__descricao" id="descricao-vantagem-04">
+                    Comprando na Valentim você evita móveis com madeira de baixa qualidade, bem como evita a frustração de investir em móveis com procedência duvidosa.<br><br>
+                    Na Valentim, seu investimento em um ambiente planejado terá um retorno realmente satisfatório, deixando você e sua família mais felizes e confortáveis.
+                </p>
+            </section>
+
+            <section class="expandivel" onclick="click_div_expandivel('descricao-vantagem-05')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Montagem gratuita na sua casa</span></p>
+                <p class="section-expandivel__descricao" id="descricao-vantagem-05">
+                    Oferecemos o serviço de montagem grátis para nossos clientes. Entregaremos seu ambiente planejado montado na sua casa e sem custos adicionais!<br>
+                    <span class="italico">(Serviço limitado pelas cidades descritas <a href="#div-frete-montagem" class="sublinhado">aqui</a>)</span>
+                </p>
+            </section>
+        </div>
+    </div>
+    
+    <div class="container-divs-expandiveis" id="div-perguntas-frequentes">
+        <div>
+            <h3>Perguntas frequentes</h3>
+            <section class="expandivel" onclick="click_div_expandivel('descricao-pergunta-00')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Quanto custa o ambiente planejado?</span></p>
+                <p class="section-expandivel__descricao" id="descricao-pergunta-00">
+                    O preço varia de acordo com o tamanho, tipo e características de cada peça escolhida.<br>
+                    Desta forma, não há como dizer o preço sem antes colher estas informações que se baseiam no gosto de cada cliente.
+                </p>
+            </section>
+
+            <section class="expandivel" onclick="click_div_expandivel('descricao-pergunta-01')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Quero um planejado, como faço?</span></p>
+                <p class="section-expandivel__descricao" id="descricao-pergunta-01">
+                    Nos envie uma mensagem que entraremos em contato com você para tirar dúvidas e prosseguir.
+                </p>
+            </section>
+
+            <section class="expandivel" onclick="click_div_expandivel('descricao-pergunta-02')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Qual é o material do planejado?</span></p>
+                <p class="section-expandivel__descricao" id="descricao-pergunta-02">
+                    Você escolhe. Ao conversar com o projetista, ele vai te informar as melhores opções que se adaptam ao seu gosto e necessidade.
+                </p>
+            </section>
+
+            <section class="expandivel" onclick="click_div_expandivel('descricao-pergunta-03')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Como posso entrar em contato?</span></p>
+                <p class="section-expandivel__descricao" id="descricao-pergunta-03">
+                    Clique em qualquer botão "SOLICITAR ORÇAMENTO" que você será direcionado(a) para uma conversa no WhatsApp com um de nossos vendedores para tirar todas suas dúvidas.
+                </p>
+            </section>
+
+            <section class="expandivel" onclick="click_div_expandivel('descricao-pergunta-04')">
+                <p class="section-expandivel__titulo"><span class="sublinhado">Não moro nos locais de montagem grátis</span></p>
+                <p class="section-expandivel__descricao" id="descricao-pergunta-04">
+                    Entre em contato conosco para vermos os detalhes e se é possível conseguir este serviço para você.
+                </p>
+            </section>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div id="footer__div-unidades-fisicas">
+            <h3>Unidades físicas:</h3>
+            <p>Móveis Valentim: Rua Drº Orlando Teixeira, n° 108, Centro, Cícero Dantas - BA, CEP: 48410-000</p>
+            <p>Valentim Eletro: Rua Dr. Orlando Teixeira, n° 75, Centro, Cícero Dantas - BA, CEP: 48410-000</p>
+            <p>Valentim Moveis e Eletro: Praça João Jose do Nascimento, nº 77, Centro Sitio do Quinto - BA, CEP: 48565-000</p>
+            <p>Valentim Comércio de Eletrodomésticos: Rua Dr. Geraldo Goes, nº 88, Centro Antas - BA, CEP: 48420-000</p>
+            <p>Als Móveis e Eletro: Avenida Saturnino Nilo, nº 448, Centro, Antas - BA, CEP: 48420-000</p>
+        </div>
+        
+        <a href="https://lojasvalentim.com/privacidade/" target="_blank" class="link-politica-privacidade">Política de privacidade</a>
+        
+        <div id="footer__div-infos-finais">
+            Móveis Valentim |  CNPJ: 03.490.447/0001-84 | Endereço: Rua Dr. Orlando Teixeira nº108, Centro, Cícero Dantas - BA | CEP: 48410-000
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
