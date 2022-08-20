@@ -37,6 +37,30 @@ var idx_imagem_atual = 0
 config_imagens_pequenas()
 
 
+function resize_pagina(){
+    // if(window.innerWidth < window.innerHeight){
+    //     img_element.classList.add("mobile")
+    //     console.log("mobile")
+    // }
+    // else{
+    //     console.log("pc")
+    //     img_element.classList.remove("mobile")
+    // }
+    //element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+
+    // console.log(img_element.clientWidth)
+    // console.log(window.innerWidth)
+    // if(img_element.clientWidth > window.innerWidth){
+    //      img_element.classList.add("mobile")
+    //     console.log("imagem maior q tela")
+    // }
+    // else{
+    //     console.log("imagem menor q tela")
+    //     // img_element.classList.remove("mobile")
+    // }
+}
+
+
 function config_imagens_pequenas(){
     var inicio_id = "main__imagem-"
 

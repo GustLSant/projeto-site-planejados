@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon_redondo.png" type="image/x-icon">
 </head>
-<body>
+<body onresize="resize_pagina()">
     <header>
         <div id="header__div-logo">
-            <img src="imagens/logo_svg_1.svg" alt="Móveis Valentim">
+            <img src="imagens/logo_jpg.jpg" alt="Móveis Valentim">
             <small>desde 1999</small>
         </div>
         <div id="header__div-botao">
-            <a href="#div-frete-montagem">
+            <a href="#div-frete-montagem" id="header__link-montagem-frete">
                 <p><span class="sublinhado">MONTAGEM E FRETE GRÁTIS</span> PARA ARACAJU E REGIÃO</p>
             </a>
             
@@ -27,8 +27,12 @@
     
     <div id="banner">
         <div id="banner__cima">
-            <p>Móveis Planejados do jeito que <br>você sonha para qualquer ambiente</p>
+            <p id="banner__slogan">Móveis Planejados do jeito que <br>você sonha para qualquer ambiente</p>
+            <a href="#div-frete-montagem" id="banner__link-montagem-frete">
+                <p><span class="sublinhado">MONTAGEM E FRETE GRÁTIS</span> PARA ARACAJU E REGIÃO</p>
+            </a>
         </div>
+        
         <div id="banner__baixo">
             <div id="banner-baixo__div-background">
                 <button class="botao-solicitar-orcamento">
@@ -54,7 +58,8 @@
     </main>
 
     <div id="container-imagens-g" class="">
-        <img src="imagens/imagem_banner_1500.jpg" alt="Imagem do planejado em tamanho grande" id="container-ig__img">
+        <p id="container-ig__msg-carregando">CARREGANDO A IMAGEM...</p>
+        <img id="container-ig__img" src="imagens/imagem_banner_1500.jpg" alt="Imagem do planejado em tamanho grande">
         <div id="container-ig__botoes">
             <button id="container-ig-botoes__botao-esquerda" class="botao-lateral" onclick="click_mudar_imagem(-1)">
                 ❮

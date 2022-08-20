@@ -110,12 +110,25 @@ header{
     color: white;
 }
 
+@media (max-width: 1000px) {
+    #header__link-montagem-frete{
+        display: none;
+    }
+}
+
 
 /* ESTILOS DO BANNER ======================================================================================================== */
 
 #banner__cima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
     background-color: var(--var-cor-04);
+}
+#banner__slogan{
     color: white;
     text-align: center;
     font-size: 2em;
@@ -132,6 +145,12 @@ header{
     to{
         opacity: 100%;
     }
+}
+
+#banner__link-montagem-frete{
+    display: none;
+    color: white;
+    font-weight: bold;
 }
 
 #banner__baixo{
@@ -162,6 +181,12 @@ header{
 #banner__baixo button:hover{
     transform: scale(1.1);
     transition: transform var(--var-dur-transicoes)
+}
+
+@media (max-width: 1000px) {
+    #banner__link-montagem-frete{
+        display: block;
+    }
 }
 
 
@@ -226,12 +251,25 @@ main > .main__imagem-planejado:hover > div{
     display: flex;
 }
 
-#container-imagens-g > img{
+#container-ig__msg-carregando{
+    font-size: 1.5em;
+    color: white;
+}
+
+#container-ig__img{
     position: absolute; /*para os filhos poderem serem deslocados*/
-    width: fit-content;
-    height: 95%;
+    /* width: fit-content;
+    height: 95%; */
+    width: 95%;
+    height: fit-content;
+    max-height: 100%;
+    max-width: 2000px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+}
+#container-ig__img.mobile{
+    width: 95%;
+    height: fit-content;
 }
 
 #container-ig__botoes{
