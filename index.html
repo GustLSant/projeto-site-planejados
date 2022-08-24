@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planejados - Móveis Valentim</title>
+    <title>Planejados - Lojas Valentim</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon_redondo.png" type="image/x-icon">
 </head>
-<body onresize="resize_pagina()">
+<body>
     <header>
         <div id="header__div-logo">
             <img src="imagens/logo_jpg.jpg" alt="Móveis Valentim">
@@ -76,7 +76,41 @@
     <div id="div-frete-montagem">
         <div id="div-fm__moldura">
             <h3>MONTAGEM E FRETE GRÁTIS PARA ARACAJU E CIDADES EM ATÉ 50 KM AO SEU REDOR</h3>
-            <a href="">ver cidades listadas</a>
+            
+            <div id="div-fm__lista-cidades">
+                <button id="div-fm__botao-lista-cidades" onclick="click_lista_cidades()">ver cidades listadas</button>
+                <div id="lista-cidades-desktop">
+                    <div>
+                        <p>Cícero Dantas</p>
+                        <p>Antas</p>
+                        <p>Ribeira do pombal</p>
+                    </div>
+                    <div>
+                        <p>Betânia</p>
+                        <p>Sítio da Conceição</p>
+                        <p>Tucano</p>
+                        <p>Jeremoabo</p>
+                    </div>
+                    <div>
+                        <p>Sítio do Quinto</p>
+                        <p>Novo Triunfo</p>
+                        <p>Caxias</p>
+                    </div>
+                </div>
+                <div id="lista-cidades-mobile">
+                    <p>Cícero Dantas</p>
+                    <p>Antas</p>
+                    <p>Ribeira do pombal</p>
+                    <p>Betânia</p>
+                    <p>Sítio da Conceição</p>
+                    <p>Tucano</p>
+                    <p>Jeremoabo</p>
+                    <p>Sítio do Quinto</p>
+                    <p>Novo Triunfo</p>
+                    <p>Caxias</p>
+                </div>
+            </div>
+            
             <button class="botao-solicitar-orcamento">
                 <p>SOLICITAR<br>ORÇAMENTO</p>
             </button>

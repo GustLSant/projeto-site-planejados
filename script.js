@@ -35,30 +35,7 @@ var idx_imagem_atual = 0
 
 
 config_imagens_pequenas()
-
-
-function resize_pagina(){
-    // if(window.innerWidth < window.innerHeight){
-    //     img_element.classList.add("mobile")
-    //     console.log("mobile")
-    // }
-    // else{
-    //     console.log("pc")
-    //     img_element.classList.remove("mobile")
-    // }
-    //element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
-
-    // console.log(img_element.clientWidth)
-    // console.log(window.innerWidth)
-    // if(img_element.clientWidth > window.innerWidth){
-    //      img_element.classList.add("mobile")
-    //     console.log("imagem maior q tela")
-    // }
-    // else{
-    //     console.log("imagem menor q tela")
-    //     // img_element.classList.remove("mobile")
-    // }
-}
+config_botoes_solicitar_orcamento()
 
 
 function config_imagens_pequenas(){
@@ -77,12 +54,27 @@ function config_imagens_pequenas(){
 }
 
 
+function config_botoes_solicitar_orcamento(){
+    const botoes = document.getElementsByClassName("botao-solicitar-orcamento")
+
+    for(let i=0; i<botoes.length; i++){
+        botoes[i].addEventListener('click', click_solicitar_orcamento);
+    }
+}
+
+
 function click_div_expandivel(_id_descricao){
     document.getElementById(_id_descricao).classList.toggle("ativo")
 }
 
 
+function click_lista_cidades(){
+    document.getElementById("div-fm__lista-cidades").classList.toggle("ativo")
+}
+
+
 function click_imagem(_id_imagem){
+    img_element.setAttribute('src', '')
     idx_imagem_atual = _id_imagem
     div_imagem_expandida.classList.add("ativo")
     img_element.src = imgs_grandes[_id_imagem]
@@ -95,6 +87,7 @@ function click_fechar_imagem(){
 
 
 function click_mudar_imagem(_direcao){
+    img_element.setAttribute('src', '')
     var idx_max = imgs_pequenas.length -1
 
     if(_direcao == -1){
@@ -118,3 +111,10 @@ function click_mudar_imagem(_direcao){
         }
     }
 }
+
+
+function click_solicitar_orcamento(){
+    window.open("https://api.whatsapp.com/send?phone=557598692608&text=Olá,%20Eu%20tenho interesse%20em%20um%20ambiente%20planejado", "_blank").focus();
+    // return gtag_report_conversion('https://api.whatsapp.com/send?phone=557598692608&text=Olá,%20Eu%20tenho interesse%20em%20um%20ambiente%20planejado');
+}
+

@@ -49,6 +49,12 @@ h3{
     text-align: center;
 }
 
+@media (max-width: 1000px) {
+    h3{
+        font-size: 1.35em;
+    }
+}
+
 .botao-solicitar-orcamento{
     border: none;
     padding: 10px 25px;
@@ -111,11 +117,24 @@ header{
 }
 
 @media (max-width: 1000px) {
-    #header__link-montagem-frete{
+    header{
+        position: static;
+    }
+    
+    #header__div-botao{
         display: none;
+    }
+
+    #header__div-logo{
+        margin: auto;
     }
 }
 
+@media (max-width: 389px) {
+    #header__div-logo > small{
+        transform: translate(-10px, 40px);
+    }
+}
 
 /* ESTILOS DO BANNER ======================================================================================================== */
 
@@ -151,6 +170,7 @@ header{
     display: none;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 #banner__baixo{
@@ -186,6 +206,11 @@ header{
 @media (max-width: 1000px) {
     #banner__link-montagem-frete{
         display: block;
+        font-size: 1.0em;
+    }
+
+    #banner__slogan{
+        font-size: 1.3em;
     }
 }
 
@@ -278,6 +303,8 @@ main > .main__imagem-planejado:hover > div{
     bottom: 0px;
     left: 0px;
     right: 0px;
+    max-width: 2000px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -322,7 +349,6 @@ main > .main__imagem-planejado:hover > div{
 
 #div-frete-montagem{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px 0px;
@@ -348,14 +374,66 @@ main > .main__imagem-planejado:hover > div{
     border-radius: 10px;
 }
 
-#div-fm__moldura > a{
+#div-fm__lista-cidades{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px;
     color: white;
+    max-height: 21px;
+    overflow: hidden;
+}
+#div-fm__lista-cidades.ativo{
+    max-height: 500px;
+    transition: max-height 0.4s;
+}
+
+#lista-cidades-desktop{
+    display: flex;
+    justify-items: center;
+    gap: 25px;
+}
+
+#lista-cidades-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+#div-fm__lista-cidades > div p::before{
+    content: "» ";
+}
+
+#div-fm__botao-lista-cidades{
     text-decoration: underline;
+    font-size: 1.1em;
+    cursor: pointer;
 }
 
 #div-fm__moldura .botao-solicitar-orcamento:hover{
     transform: scale(1.1);
     transition: transform var(--var-dur-transicoes)
+}
+
+@media (max-width: 1000px){
+    #div-frete-montagem{
+        padding: 50px 20px;
+    }
+
+    #div-fm__moldura{
+        padding: 30px;
+    }
+
+    #lista-cidades-desktop{
+        display: none;
+    }
+    
+    #lista-cidades-mobile{
+        display: flex;
+    }
 }
 
 
@@ -398,7 +476,8 @@ main > .main__imagem-planejado:hover > div{
     margin-left: 40px;
 }
 .section-expandivel__descricao.ativo{
-    max-height: 999px;
+    max-height: 400px;
+    transition: max-height 0.4s;
 }
 
 
