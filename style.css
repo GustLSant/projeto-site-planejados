@@ -8,7 +8,8 @@
     --var-cor-01: #931515;
     --var-cor-02: #159439;
     --var-cor-03: #0f6b29;
-    --var-cor-04: #5F0B0B;
+    /* --var-cor-04: #5F0B0B; */
+    --var-cor-04: #710a0a;
     --var-cor-05: #350606;
 
     --var-dur-transicoes: 0.1s;
@@ -63,7 +64,7 @@ h3{
     font-weight: bold;
     line-height: 1.25em;
     border-radius: 5px;
-    box-shadow: 3px 3px 5px rgba(0,0,0,.5);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.35);
     transition: transform var(--var-dur-transicoes), background-color var(--var-dur-transicoes);
 }
 .botao-solicitar-orcamento:hover{
@@ -88,19 +89,18 @@ header{
     justify-content: space-between;
     background-color: var(--var-cor-01);
     color: white;
-    box-shadow: 0px 3px 5px 5px rgba(0,0,0,.3);
+    box-shadow: 0px 3px 3px rgba(0,0,0,.25);
 }
 
-#header__div-logo{
-    height: 74px; /*tamanho da imagem*/
-}
 #header__div-logo > img{
-    width: 229px;
+    margin-bottom: -3px;
+    width: min(229px, 100%);
 }
 #header__div-logo > small{
     position: absolute;
     transform: translate(-10px, 48px);
     font-weight: bold;
+    word-break: break-all;
 }
 
 #header__div-botao{
@@ -117,10 +117,6 @@ header{
 }
 
 @media (max-width: 1000px) {
-    header{
-        position: static;
-    }
-    
     #header__div-botao{
         display: none;
     }
@@ -229,30 +225,22 @@ main{
     background: var(--var-cor-04);
 }
 
-main .main__imagem-planejado{
-    width: 300px;
+.main__imagem-planejado{
+    width: min(300px, 100%);
     height: 168px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.3);
     z-index: inherit;
     background-image: url(imagens/imagem_banner_1500.jpg);
     background-size: cover;
     cursor: pointer;
     transition: transform var(--var-dur-transicoes);
 }
-main > .main__imagem-planejado:hover{
+.main__imagem-planejado:hover{
     transform: scale(1.3);
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0, 0.3);
     z-index: 1;
-    transition: transform var(--var-dur-transicoes);
-}
-
-main .main__imagem-planejado > div{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.3);
-    transition: background-color var(--var-dur-transicoes);
-}
-main > .main__imagem-planejado:hover > div{
-    background-color: rgba(0,0,0,.0);
-    transition: background-color var(--var-dur-transicoes);
+    transition: transform var(--var-dur-transicoes), box-shadow var(--var-dur-transicoes);
 }
 
 
@@ -279,22 +267,17 @@ main > .main__imagem-planejado:hover > div{
 #container-ig__msg-carregando{
     font-size: 1.5em;
     color: white;
+    text-align: center;
 }
 
 #container-ig__img{
     position: absolute; /*para os filhos poderem serem deslocados*/
-    /* width: fit-content;
-    height: 95%; */
     width: 95%;
     height: fit-content;
     max-height: 100%;
     max-width: 2000px;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0,0,0,.3);
-}
-#container-ig__img.mobile{
-    width: 95%;
-    height: fit-content;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.3);
 }
 
 #container-ig__botoes{
@@ -307,18 +290,17 @@ main > .main__imagem-planejado:hover > div{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px;
+    align-items: stretch;
 }
 
 #container-ig__botoes > button{
-    opacity: 50%;
-    transition: opacity var(--var-dur-transicoes), transform var(--var-dur-transicoes);
+    /* opacity: 50%; */
+    transition: transform var(--var-dur-transicoes);
 }
 #container-ig__botoes > button:hover{
-    opacity: 100%;
+    /* opacity: 100%; */
     transform: scale(1.1);
-    transition: opacity var(--var-dur-transicoes), transform var(--var-dur-transicoes);
+    transition: transform var(--var-dur-transicoes);
     cursor: pointer;
 }
 
@@ -326,22 +308,25 @@ main > .main__imagem-planejado:hover > div{
     position: absolute;
     right: 11px;
     top: 0px;
+    font-size: 2em;
+}
+
+#container-ig__botoes > .botao-lateral:nth-child(1){
+    padding: 0px 10px;
     font-size: 3em;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: var(--var-cor-04);
+    background-image: linear-gradient(to right, rgba(0,0,0, 0.3), transparent);
+}
+#container-ig__botoes > .botao-lateral:nth-child(2){
+    padding: 0px 10px;
+    font-size: 3em;
+    background-image: linear-gradient(to left, rgba(0,0,0, 0.3), transparent);
 }
 
-#container-ig__botoes > .botao-lateral{
-    font-size: 4em;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: var(--var-cor-04);
-}
 
-#container-ig-botoes__botao-esquerda{
-    padding: 60px 40px 60px 0px;
-}
-#container-ig-botoes__botao-direita{
-    padding: 60px 0px 60px 40px;
+@media (max-width: 1000px) {
+    #container-ig__msg-carregando{
+        font-size: 1em;
+    }
 }
 
 
