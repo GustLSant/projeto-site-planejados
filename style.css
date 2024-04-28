@@ -65,11 +65,12 @@ h3{
     line-height: 1.25em;
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(0,0,0,.35);
-    transition: transform var(--var-dur-transicoes), background-color var(--var-dur-transicoes);
+    transition: transform var(--var-dur-transicoes), filter var(--var-dur-transicoes);
 }
 .botao-solicitar-orcamento:hover{
     text-decoration: underline;
-    background-color: var(--var-cor-03);
+    /* background-color: var(--var-cor-03); */
+    filter: brightness(125%);
     cursor: pointer;
 }
 
@@ -189,11 +190,11 @@ header{
     background-attachment: fixed;
     background-position: bottom;
 }
-#banner-baixo__div-background:hover{
+/* #banner-baixo__div-background:hover{
     padding-bottom: 300px;
     transition: padding-bottom 0.5s;
     transition-delay: 0.2s;
-}
+} */
 #banner__baixo button:hover{
     transform: scale(1.1);
     transition: transform var(--var-dur-transicoes)
