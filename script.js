@@ -114,6 +114,7 @@ function click_mudar_imagem(_direcao){
 
 
 function click_solicitar_orcamento(){
+    gtag_report_conversion()
     window.open("https://api.whatsapp.com/send?phone=557598692608&text=Olá,%20Eu%20tenho interesse%20em%20um%20ambiente%20planejado", "_blank").focus();
     // return gtag_report_conversion('https://api.whatsapp.com/send?phone=557598692608&text=Olá,%20Eu%20tenho interesse%20em%20um%20ambiente%20planejado');
 }
